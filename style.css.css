@@ -1,0 +1,200 @@
+body {
+  background-image: url("fond.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* Titre */
+.side-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #d2e77f;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date h1 {
+  font-family: 'Arial', sans-serif; /* Police différente pour h1 */
+  margin-right: 10px; /* Espacement entre les éléments */
+}
+
+.date h2 {
+  font-family: 'Georgia', serif; /* Police différente pour h2 */
+}
+.sidebar {
+    width: 260px;
+    padding: 25px;
+    border-radius: 18px;
+
+    background: rgba(0, 40, 20, 0.35);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+
+    color: #e7f0d0;
+}
+
+/* Liste */
+.side-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.side-menu li a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.side-menu li a:hover {
+    color: #caff78;
+}
+
+/* Sous-menu (dropdown) */
+.dropdown-list {
+    list-style: none;
+    margin-top: 8px;
+    padding-left: 15px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list li a {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.dropdown-list li a:hover {
+    opacity: 1;
+}
+
+/* Icônes en bas */
+.side-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.side-icons .icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.side-icons .icon:hover {
+    background: rgba(255, 255, 255, 0.18);
+    scale: 1.08;
+}
+.calendar {
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+
+  background: rgba(0, 40, 20, 0.4);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.calendar h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #d3e29a;   /* Jaune-vert */
+  margin-bottom: 20px;
+}
+
+.cal-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cal-header .year {
+  font-size: 38px;
+  font-weight: 600;
+  color: white;
+}
+
+.cal-header .month {
+  font-size: 20px;
+  color: #c8d880;
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.day-name {
+  font-size: 12px;
+  color: #9fb678;
+  text-align: center;
+}
+
+.day {
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.empty {
+  visibility: hidden;
+}
+
+/* Style pour le jour actuel (si tu veux ajouter) */
+.day.today {
+  background: #c7ff4f;
+  color: #0b2418;
+  font-weight: bold;
+}
+.search-bar {
+width: 100%;
+display: flex;
+padding: 20px 40px; /* marge pour respirer depuis le bord droit */
+position: absolute; /* permet de placer en haut à droite */
+top: 0;
+left: 0;
+}
+
+
+.search-input {
+width: 350px;
+padding: 12px 20px;
+background: rgba(255,255,255,0.1);
+border: none;
+border-radius: 25px;
+font-size: 16px;
+outline: none;
+color: #fff;
+}
