@@ -198,3 +198,61 @@ font-size: 16px;
 outline: none;
 color: #fff;
 }
+.search {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    background: rgba(0, 40, 20, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.search-input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.carousel {
+    position: absolute; /* reste au même endroit même en scrollant */
+    top: 40%;        /* centre verticalement */
+    right: 100px;     /* marge à droite */
+    transform: translateY(-50%); /* ajuste le centrage */
+    
+    width: 1050px;
+    height: 480px;
+
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    z-index: 1000; /* passe au-dessus des autres blocs */
+}
+
+/* --- Slides --- */
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.carousel img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* --- Boutons --- */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
