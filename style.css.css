@@ -213,11 +213,11 @@ color: #fff;
 }
 .carousel {
     position: absolute; /* reste au même endroit même en scrollant */
-    top: 40%;        /* centre verticalement */
-    right: 100px;     /* marge à droite */
+    top: 50%;        /* centre verticalement */
+    right: 30px;     /* marge à droite */
     transform: translateY(-50%); /* ajuste le centrage */
     
-    width: 1050px;
+    width: 980px;
     height: 480px;
 
     overflow: hidden;
