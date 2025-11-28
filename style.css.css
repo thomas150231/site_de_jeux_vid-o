@@ -256,3 +256,60 @@ color: #fff;
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+.last-chance {
+  position: absolute; /* reste au même endroit même en scrollant */
+    top:100%;        /* centre verticalement */
+    right: 30px;     /* marge à droite */
+    transform: translateY(-50%); /* ajuste le centrage */
+    
+    width: 980px;
+    height: 195px;
+
+  background: rgba(0, 40, 20, 0.4);
+  backdrop-filter: blur(15px);
+  color: #caff78;
+  
+  border-radius: 4px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  margin-top: 30px
+}
+
+.last-chance h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.game-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.game-card {
+  min-width: 180px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .25s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  width: 100%;
+  display: block;
+}
+
+.game-card p {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
